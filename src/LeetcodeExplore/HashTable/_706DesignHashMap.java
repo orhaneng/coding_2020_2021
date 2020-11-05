@@ -1,9 +1,8 @@
-package HashTable;
+package LeetcodeExplore.HashTable;
 
 //https://leetcode.com/problems/design-hashmap/
 
 import java.util.Arrays;
-import java.util.List;
 
 public class _706DesignHashMap {
 

@@ -1,8 +1,7 @@
-package HashTable;
+package LeetcodeExplore.HashTable;
 
 //https://leetcode.com/problems/contains-duplicate/
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 

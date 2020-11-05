@@ -1,4 +1,4 @@
-package HashTable;
+package LeetcodeExplore.HashTable;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
