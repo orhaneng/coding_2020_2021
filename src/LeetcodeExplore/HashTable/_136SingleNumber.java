@@ -1,7 +1,6 @@
 package LeetcodeExplore.HashTable;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class _136SingleNumber {
     public int singleNumber2(int[] nums) {
@@ -24,8 +23,14 @@ public class _136SingleNumber {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2,1,4,5,2,4,1};
-        System.out.println(singleNumber(nums));
+
+        List<Integer> set = new ArrayList<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        Collections.sort(set);
+        //int[] nums = {2,1,4,5,2,4,1};
+        //System.out.println(singleNumber(nums));
     }
 
     public static int singleNumber(int[] num){
