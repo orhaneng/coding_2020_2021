@@ -1,12 +1,18 @@
 package LeetcodeExplore.RecursionI.HashTable;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 //https://leetcode.com/problems/intersection-of-two-arrays/
 public class _349IntersectionofTwoArrays {
 
-    public int[] intersection(int[] nums1, int[] nums2) {
+    public static void main(String[] args) {
+        int[] nums1 = {4,9,5}, nums2 = {9,4,9,8,4};
+        Arrays.stream(intersection(nums1,nums2)).forEach(System.out::println);
+    }
+    public static int[] intersection(int[] nums1, int[] nums2) {
 
         Set<Integer> set = new HashSet<Integer>();
         Set<Integer> interset = new HashSet<Integer>();
@@ -24,6 +30,7 @@ public class _349IntersectionofTwoArrays {
         for(int num : interset){
             res[i++] =num;
         }
+
         return res;
     }
 }
