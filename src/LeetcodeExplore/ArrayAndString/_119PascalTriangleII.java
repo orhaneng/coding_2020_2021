@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class _119PascalTriangleII {
-    public List<Integer> getRow(int rowIndex) {
+    public static void main(String[] args) {
+        getRow(4);
+    }
+    public static List<Integer> getRow(int rowIndex) {
         List<Integer> list = new ArrayList<>();
         for(int i = 0; i <= rowIndex; i++) {
             list.add(0,1);
