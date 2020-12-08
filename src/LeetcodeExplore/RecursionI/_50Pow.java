@@ -19,7 +19,7 @@ public class _50Pow {
             x = 1 / x;
             N = -N;
         }
-
+        //sdasd
         return fastPow(x, N);
     }
 }
