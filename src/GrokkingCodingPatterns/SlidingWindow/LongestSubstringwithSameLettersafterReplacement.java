@@ -1,5 +1,7 @@
 package GrokkingCodingPatterns.SlidingWindow;
 
+//https://leetcode.com/problems/longest-repeating-character-replacement/
+
 import java.util.HashMap;
 import java.util.Map;
 

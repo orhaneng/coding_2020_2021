@@ -4,7 +4,7 @@ package GrokkingCodingPatterns.SlidingWindow;
 public class MaximumSumSubarrayofSizeK {
     public static void main(String[] args) {
 
-        System.out.println(maximumSumSubarrayofSizeK(new int[]{2, 3, 4, 1, 5}, 2));
+        System.out.println(maximumSumSubarrayofSizeK(new int[]{1, -1, 5, -2, 3}, 3));
     }
 
     public static int maximumSumSubarrayofSizeK(int[] arr, int k) {

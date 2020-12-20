@@ -1,6 +1,7 @@
 package GrokkingCodingPatterns.SlidingWindow;
-
+//https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/
 import java.util.HashMap;
+
 /*
 Problem Statement #
 Given a string, find the length of the longest substring which has no repeating characters.
@@ -26,7 +27,7 @@ public class NoRepeatSubstring {
 
 
     public static void main(String[] args) {
-        System.out.println(noRepeatSubstring("abccde"));
+        System.out.println(noRepeatSubstring("abba"));
     }
 
     public static int noRepeatSubstring(String str) {
@@ -35,13 +36,12 @@ public class NoRepeatSubstring {
         int start = 0;
         int max = 0;
         for (int end = 0; end < str.length(); end++) {
-            if (map.containsKey(str.charAt(end))) {
-                int index = map.get(str.charAt(end));
-                start = index + 1;
-            } else {
-                max = Math.max(max, end - start + 1);
-                map.put(str.charAt(end), end - start);
+            char rightchar = str.charAt(end);
+            if (map.containsKey(rightchar)) {
+                start = Math.max(start, map.get(rightchar) + 1);
             }
+            map.put(str.charAt(end), end);
+            max = Math.max(max, end - start + 1);
         }
         return max;
     }

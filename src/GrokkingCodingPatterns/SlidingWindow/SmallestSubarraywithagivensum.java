@@ -1,9 +1,11 @@
 package GrokkingCodingPatterns.SlidingWindow;
 
+//https://leetcode.com/problems/minimum-size-subarray-sum/submissions/
+
 public class SmallestSubarraywithagivensum {
     public static void main(String[] args) {
 
-        System.out.println(smallestSubarraywithagivensum(new int[]{3, 4, 1, 1, 6}, 8));
+        System.out.println(smallestSubarraywithagivensum(new int[]{3, 4, 1, 1, 6}, 7));
 
     }
 
