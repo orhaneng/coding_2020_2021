@@ -1,4 +1,4 @@
-package GrokkingCodingPattern.CyclicSort;
+package GrokkingCodingPatterns.CyclicSort;
 
 import java.util.Arrays;
 

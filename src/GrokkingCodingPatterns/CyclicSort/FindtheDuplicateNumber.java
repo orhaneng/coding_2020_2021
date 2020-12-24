@@ -1,4 +1,4 @@
-package GrokkingCodingPattern.CyclicSort;
+package GrokkingCodingPatterns.CyclicSort;
 //https://leetcode.com/problems/find-the-duplicate-number/
 
 public class FindtheDuplicateNumber {
