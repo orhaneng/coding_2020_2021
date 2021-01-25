@@ -32,21 +32,17 @@ public class LinkedListCycle {
 
         //System.out.println(hasCycle(root));
     }
-
+    /*
+        Time Complexity #
+        As we have concluded above, once the slow pointer enters the cycle, the fast pointer will meet the slow pointer in the same loop.
+        Therefore, the time complexity of our algorithm will be O(N) where ‘N’ is the total number of nodes in the LinkedList.
+        Space Complexity #
+        The algorithm runs in constant space O(1).
+     */
     public static boolean hasCycle(Node node) {
-
-        /*
-            Time Complexity #
-            As we have concluded above, once the slow pointer enters the cycle, the fast pointer will meet the slow pointer in the same loop.
-            Therefore, the time complexity of our algorithm will be O(N) where ‘N’ is the total number of nodes in the LinkedList.
-            Space Complexity #
-            The algorithm runs in constant space O(1).
-         */
         if (node == null) return false;
-
         Node slow = node;
         Node fast = node;
-
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;

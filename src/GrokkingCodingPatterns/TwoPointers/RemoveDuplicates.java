@@ -34,10 +34,8 @@ The algorithm runs in constant space O(1)O(1).
 
     public static int removeDuplicates(int[] arr) {
         if (arr.length == 0) return -1;
-
         int slow = 0;
         int fast = 1;
-
         while (fast < arr.length) {
             if (arr[slow] < arr[fast]) {
                 arr[++slow] = arr[fast];
@@ -51,7 +49,6 @@ The algorithm runs in constant space O(1)O(1).
 
     public static int removeDuplicates2(int[] arr) {
             if (arr.length == 0) return -1;
-
             int slow=1;
             for (int fast = 0; fast <arr.length ; fast++) {
                 if(arr[fast]!=arr[slow]){

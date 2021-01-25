@@ -34,8 +34,6 @@ public class FindtheDuplicateNumber {
     }
 
     public static int findDuplicate2(int[] nums) {
-
-
         int i = 0;
         while (i < nums.length) {
             if (nums[i] != i + 1) {

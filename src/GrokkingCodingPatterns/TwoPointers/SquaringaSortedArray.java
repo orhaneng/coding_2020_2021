@@ -31,11 +31,8 @@ public class SquaringaSortedArray {
     }
 
     public static int[] squaringaSortedArray(int[] arr) {
-
         int[] res = new int[arr.length];
-
         int right = arr.length - 1, left = 0, indes = arr.length - 1;
-
         while (left <= right) {
             int rightsquare = arr[right] * arr[right];
             int leftsquare = arr[left] * arr[left];
@@ -46,8 +43,10 @@ public class SquaringaSortedArray {
                 res[indes--] = rightsquare;
                 right--;
             }
+
+            Arrays.stream(res).forEach(e-> System.out.print(e+","));
+            System.out.println();
         }
         return res;
-
     }
 }

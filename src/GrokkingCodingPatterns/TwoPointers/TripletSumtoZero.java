@@ -39,17 +39,13 @@ public class TripletSumtoZero {
     public static void main(String[] args) {
         threeSum(new int[]{-3, 0, 1, 2, -1, 1, -2}).stream().forEach(System.out::println);
     }
-
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
-
         for (int i = 0; i < nums.length - 2; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) continue;
-            help(nums, -nums[i], i + 1, res);
-        }
-        return res;
-    }
+            help(nums, -nums[i], i + 1, res); }
+        return res; }
 
     public static void help(int[] nums, int target, int left, List<List<Integer>> res) {
         int right = nums.length - 1;

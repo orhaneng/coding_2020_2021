@@ -1,6 +1,7 @@
 package GrokkingCodingPatterns.FastSlowPointers;
 
 //https://leetcode.com/problems/linked-list-cycle-ii/submissions/
+//https://leetcode.com/problems/linked-list-cycle-ii/discuss/44774/Java-O(1)-space-solution-with-detailed-explanation.
 
 /*
 Problem Statement #
@@ -32,8 +33,6 @@ public class StartofLinkedListCycle {
     }
 
     public static Node findCycleSart(Node root) {
-
-        //https://leetcode.com/problems/linked-list-cycle-ii/discuss/44774/Java-O(1)-space-solution-with-detailed-explanation.
         Node slow = root;
         Node fast = root;
         while (fast != null && fast.next != null) {
