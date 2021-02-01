@@ -17,6 +17,7 @@ therefore we will need O(N)O(N) space to store them in the queue.
 
 
  */
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,22 +50,19 @@ public class LevelAveragesinaBinaryTree {
 
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> list = new ArrayList<>();
-
-        if(root==null) return list;
-
+        if (root == null) return list;
         Queue<TreeNode> queue = new LinkedList<>();
-
         queue.add(root);
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int size = queue.size();
             Double sum = 0.0;
-            for (int i = 0; i <size; i++) {
+            for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
-                sum +=node.val;
-                if(node.left!=null) queue.add(node.left);
-                if(node.right!=null) queue.add(node.right);
+                sum += node.val;
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
             }
-            list.add(sum/size);
+            list.add(sum / size);
         }
         return list;
     }

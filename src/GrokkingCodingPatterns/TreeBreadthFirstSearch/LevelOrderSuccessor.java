@@ -48,7 +48,6 @@ public class LevelOrderSuccessor {
         if (root == null) return null;
 
         Queue<TreeNode> queue = new LinkedList<>();
-
         queue.add(root);
         boolean succ = false;
         while (!queue.isEmpty()) {

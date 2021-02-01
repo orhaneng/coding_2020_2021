@@ -44,9 +44,7 @@ public class ZigzagTraversal {
                 if(child.left!=null) queue.add(child.left);
                 if(child.right!=null) queue.add(child.right);
             }
-
             rightleft = !rightleft;
-
             list.add(sublist);
         }
         return list;
