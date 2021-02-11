@@ -39,10 +39,11 @@ public class Subsets {
 
 
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         subsets(new int[]{1, 3}).forEach(System.out::println);
     }
-/*    public static List<List<Integer>> subsets(int[] nums) {
+    public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> subsets = new ArrayList<>();
         subsets.add(new ArrayList<>());
 
@@ -55,27 +56,25 @@ public class Subsets {
             }
         }
         return subsets;
-
-
-    }*/
-
-    public static List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        Arrays.sort(nums);
-        backtracking(nums, result, new ArrayList<>(), 0);
-        return result;
     }
 
-    public static void backtracking(int[] nums, List<List<Integer>> list, List<Integer> templist, int start) {
-
-        list.add(new ArrayList<>(templist));
-        for (int i = start; i < nums.length; i++) {
-            templist.add(nums[i]);
-            backtracking(nums, list, templist, i + 1);
-            templist.remove(templist.size() - 1);
-        }
-
-    }
+//    public static List<List<Integer>> subsets(int[] nums) {
+//        List<List<Integer>> result = new ArrayList<>();
+//        Arrays.sort(nums);
+//        backtracking(nums, result, new ArrayList<>(), 0);
+//        return result;
+//    }
+//
+//    public static void backtracking(int[] nums, List<List<Integer>> list, List<Integer> templist, int start) {
+//
+//        list.add(new ArrayList<>(templist));
+//        for (int i = start; i < nums.length; i++) {
+//            templist.add(nums[i]);
+//            backtracking(nums, list, templist, i + 1);
+//            templist.remove(templist.size() - 1);
+//        }
+//
+//    }
 
 
 }

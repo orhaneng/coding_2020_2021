@@ -51,12 +51,8 @@ public class SumofPathNumbers {
 
     public static int sumNumbers(TreeNode root) {
         if (root == null) return 0;
-
         return helper(root, 0);
-
-
     }
-
     public static int helper(TreeNode node, int num) {
         if (node == null) return 0;
 
@@ -67,7 +63,6 @@ public class SumofPathNumbers {
         }
         return helper(node.left, num) +
                 helper(node.right, num);
-
     }
 
 }

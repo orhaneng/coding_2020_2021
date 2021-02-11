@@ -8,6 +8,9 @@ import java.util.List;
 
 public class BalancedParentheses {
 
+    public static void main(String[] args) {
+        generateParenthesis(3).forEach(System.out::println);
+    }
     public static List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
         backtrack(res, "", 0,0,n);
