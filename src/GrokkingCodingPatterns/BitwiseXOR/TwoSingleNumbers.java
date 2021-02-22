@@ -34,29 +34,20 @@ public class TwoSingleNumbers {
 
     public static int[] findsingleNumbers(int[] nums) {
         int x1x2 = 0;
-
         for (int num : nums) {
             x1x2 ^= num;
         }
-
-
         int rightmostsetbit = 1;
-
         while ((rightmostsetbit & x1x2) == 0)
             rightmostsetbit = rightmostsetbit << 1;
-
         int num1 = 0, num2 = 0;
-
         for (int num : nums) {
             if ((num & rightmostsetbit) != 0)
                 num1 ^= num;
             else
                 num2 ^= num;
         }
-
         return new int[]{num1, num2};
-
-
     }
 }
 

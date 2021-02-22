@@ -47,14 +47,10 @@ public class OrderAgnosticBinarySearch {
         if (arr.length == 0) return -1;
         int n = arr.length - 1;
         boolean isAscending = (arr[0] - arr[n]) < 0;
-
         int start = 0;
         int end = n;
-
         while (start <= end) {
             int mid = start + (end - start) / 2;
-
-
             if(arr[mid]==key) return mid;
             if(isAscending){
                 if (arr[mid] > key) {
@@ -71,7 +67,6 @@ public class OrderAgnosticBinarySearch {
                     end = mid - 1;
                 }
             }
-
         }
         return -1;
     }

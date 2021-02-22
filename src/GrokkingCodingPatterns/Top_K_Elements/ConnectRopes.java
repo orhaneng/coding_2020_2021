@@ -42,13 +42,10 @@ public class ConnectRopes {
 
     public static int minimumCostToConnectRopes(int[] ropeLengths) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>((a, b) -> a - b);
-
         int sum = 0;
-
         for (int rope : ropeLengths) {
             minHeap.offer(rope);
         }
-
         while (minHeap.size() > 1) {
             int subsum = minHeap.poll() + minHeap.poll();
             minHeap.offer(subsum);

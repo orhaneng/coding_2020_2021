@@ -33,10 +33,8 @@ public class MergeKSortedLists {
     public class ListNode {
         int val;
         ListNode next;
-
         ListNode() {
         }
-
         ListNode(int val) {
             this.val = val;
         }
@@ -52,9 +50,7 @@ public class MergeKSortedLists {
         for(ListNode node:lists){
             queue.add(node);
         }
-
         ListNode head = null, tail = null;
-
         while (!queue.isEmpty()){
             ListNode node = queue.poll();
 

@@ -60,7 +60,7 @@ public class KthSmallestNumber {
         PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
         for (int num : nums) {
             queue.add(num);
-            //if (queue.size() > k)
+            if (queue.size() > k)
                 queue.poll();
         }
        System.out.println(queue.peek());

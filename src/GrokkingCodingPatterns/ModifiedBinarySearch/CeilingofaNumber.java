@@ -67,7 +67,8 @@ public class CeilingofaNumber {
             if (arr[mid] > key) end = mid - 1;
             else start = mid + 1;
         }
-
+        //we return start becuase loop can continue until start ==end
+        // then next start >end. that's why start is the next bigger
         return start;
     }
 }
