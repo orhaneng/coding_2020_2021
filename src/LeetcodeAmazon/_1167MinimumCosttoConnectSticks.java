@@ -4,6 +4,9 @@ package LeetcodeAmazon;
 
 import java.util.PriorityQueue;
 
+/*
+TIME O(LOGN) SPACE O(NJ)
+ */
 public class _1167MinimumCosttoConnectSticks {
     class Solution {
         public int connectSticks(int[] sticks) {
